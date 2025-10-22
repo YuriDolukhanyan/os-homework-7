@@ -82,12 +82,12 @@ Example output:
 
 ```
 === First Come First Served (FCFS) ===
-Gantt Chart: | P1 |   P2   |   P3   |   P4   |
-PID     AT     BT     WT     TAT    RT
-1       0      8      0      8      0
-2       1      4      7      11     7
-3       2      9      10     19     10
-4       3      5      18     23     18
+Gantt Chart: | P1 | P2 | P3 | P4 |
+PID     AT      BT      WT      TAT     RT
+1       0       8       0       8       0
+2       1       4       7       11      7
+3       2       9       10      19      10
+4       3       5       18      23      18
 
 Average Waiting Time: 8.75
 Average Turnaround Time: 15.25
@@ -96,12 +96,12 @@ Average Response Time: 8.75
 
 ```
 === Shortest Job First (SJF) ===
-Gantt Chart: | P2 | P4 |   P1   |   P3   |
-PID     AT     BT     WT     TAT    RT
-1       0      8      0      8      0
-2       1      4      7      11     7
-4       3      5      9      14     9
-3       2      9      15     24     15
+Gantt Chart: | P1 | P2 | P4 | P3 |
+PID     AT      BT      WT      TAT     RT
+1       0       8       0       8       0
+2       1       4       7       11      7
+4       3       5       9       14      9
+3       2       9       15      24      15
 
 Average Waiting Time: 7.75
 Average Turnaround Time: 14.25
