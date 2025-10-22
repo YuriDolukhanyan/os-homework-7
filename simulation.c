@@ -69,18 +69,18 @@ void fcfs(struct Process p[], int n) {
 }
 
 void sjf(struct Process p[], int n) {
-        int completed[100] = {0};
-        int completed_count = 0;
-        int current_time = 0;
+    int completed[100] = {0};
+    int completed_count = 0;
+    int current_time = 0;
 
-        struct Process order[n];
+    struct Process order[n];
 
-        while (completed_count < n) {
-                int idx = -1;
-                int min_bt = 1e9;
+    while (completed_count < n) {
+        int idx = -1;
+        int min_bt = 1e9;
 
-                for (int i = 0; i < n; i++) {
-                        if (!completed[i] && p[i].arrival_time <= current_time) {
+        for (int i = 0; i < n; i++) {
+            if (!completed[i] && p[i].arrival_time <= current_time) {
 				if (p[i].burst_time < min_bt || (p[i].burst_time == min_bt && p[i].arrival_time < p[idx].arrival_time)) {
 					min_bt = p[i].burst_time;
 					idx = i;
